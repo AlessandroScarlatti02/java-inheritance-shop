@@ -20,7 +20,7 @@ public class Product {
 		setCode();
 		setName(name);
 		setBrand(brand);
-		
+		System.out.println("Prodotto " + this.name + " creato correttamente \n" );
 	}
 	
 	public Product(int code, String name, String brand) {
@@ -30,7 +30,7 @@ public class Product {
 		setName(name);
 		setBrand(brand);
 		
-		
+		System.out.println("Prodotto " + this.name + " creato correttamente \n" );
 	}
 	
 	public Product(int code, String name, String brand, double price) {
@@ -41,7 +41,7 @@ public class Product {
 		setBrand(brand);
 		
 		setPrice(price);
-		
+		System.out.println("Prodotto " + this.name + " creato correttamente \n" );
 	}
 	
 	
@@ -55,11 +55,11 @@ public class Product {
 		setPrice(price);
 		
 		setIva(iva);
-		
+		System.out.println("Prodotto " + this.name + " creato correttamente \n" );
 	}
 	
 	private void checkCode(int code) {
-		if (code>=0 && code<=9999) {
+		if (code>0 && code<=9999) {
 			this.code = code;
 		} else {
 			setCode();
@@ -137,6 +137,10 @@ public class Product {
 		return iva;
 	}
 	
+	double getCompletePrice() {
+		return price*iva;
+	}
+	
 	void getProductInformations(Product product) {
 		
 		System.out.println(product.toString());
@@ -146,12 +150,12 @@ public class Product {
 	@Override
 	public String toString() {
 		
-		return "Prodotto" + name + "creato correttamente \n" +
-				"Codice: " + code + "\n" +
+		return 	"Codice: " + code + "\n" +
 				"Nome: " + name + "\n" +
 				"Marca: " + brand + "\n" +
 				"Prezzo: " + price + "\n" +
-				"Iva: " + iva + "\n";
+				"Iva: " + iva + "\n" + 
+				"Prezzo Completo: " + getCompletePrice() + "\n";
 	}
 
 }
