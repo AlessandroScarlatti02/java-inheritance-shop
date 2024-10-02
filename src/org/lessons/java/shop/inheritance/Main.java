@@ -17,6 +17,9 @@ public class Main {
 
 		Smartphone s1 = new Smartphone(0, 1024, 0, "Iphone 16 Pro Max", "Apple", 1150, 1.22);
 		s1.getProductInformations(s1);
+		
+		Headphones h1 = new Headphones("Blue", true, 0, "Bose QuietComfort", "Bose", 298.99, 1.22);
+		h1.getProductInformations(h1);
 	}
 
 }
