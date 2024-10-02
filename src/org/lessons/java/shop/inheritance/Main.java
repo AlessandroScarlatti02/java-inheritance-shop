@@ -15,6 +15,8 @@ public class Main {
 		Tv t1 = new Tv(55, true, 0, "TV OLED", "LG", 895.00, 1.22);
 		t1.getProductInformations(t1);
 
+		Smartphone s1 = new Smartphone(0, 1024, 0, "Iphone 16 Pro Max", "Apple", 1150, 1.22);
+		s1.getProductInformations(s1);
 	}
 
 }
