@@ -63,7 +63,7 @@ public class Product {
 			this.code = code;
 		} else {
 			setCode();
-			System.out.println("Codice inserito non valido, codice generato randomicamente");
+			//System.out.println("Codice inserito non valido, codice generato randomicamente");
 			System.out.println("Codice: " + this.code);
 		}
 	}
