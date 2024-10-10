@@ -93,6 +93,7 @@ public class ShoppingCart {
                             System.out.println("Il numero inserito non corrisponde a nessun prodotto, Riprova.");
                         }
                     } while (f);
+                    break;
                 }
                 case 4: {
                     if (cart.length == 0) {
